@@ -1,0 +1,90 @@
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .tab {
+      margin-top: 50px;
+  }
+
+  /* Style tab links */
+  .tablink {
+    background-color: rgb(117, 117, 117);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 10vmax;
+    font-size: 2vmax;
+  }
+  .tablink:hover {
+    background-color: rgb(170, 170, 170);
+    border-color: none;
+  }
+
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 0px 100px 0px;
+    height: 100%;
+  }
+// ELEMENT WARNA PADA PAGE
+#Home {background-color: rgb(255, 255, 255);}
+#News {background-color: rgb(255, 255, 255);}
+
+// MENYEMBUNYIKAN ELEMENT COLUMN TABLE >CLASS DENGAN(.)>ID DENGAN(#)
+@media screen and (max-width: 750px) {
+  .table_utama {
+      #hilangkan {
+      display: none;
+      }
+    } 
+}
+@media screen and (max-width: 750px) {
+  .anakTabel {
+      #hilangkan2 {
+      display: none;
+      }
+    } 
+}
+
+// MENGATUR POSISI DARI THEAD ATAU TEXT DIDALAM TABEL AGAR RATA ATAS (ALIGN)
+.table thead th {
+  vertical-align: top;
+  text-align: center;
+}
+
+// KELOMPOK WARNA BUTTON STATUS
+.btn-warning {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+.btn-info {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+.btn-success {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+.btn-danger {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+.btn-primary {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+.btn-secondary {
+  width: 100%;
+  padding: 0vmin 2vmin 0vmin 2vmin;
+}
+
+

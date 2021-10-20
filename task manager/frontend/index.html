@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../frontend/library/css/bootstrap.css">
+    <link rel="stylesheet" href="../frontend/styles/main.css">
+</head>
+<body>
+<div class="container">
+    <!-- button untuk memilih user atau admin -->
+  <div class="tab">
+    <button class="tablink" onclick="openPage('Home', this, '#17a2b8')"id="defaultOpen">user</button>
+    <button class="tablink" onclick="openPage('News', this, '#fd7e14')">Admin</button>
+  </div>
+
+<!-- INI USER -->
+<!-- tabel header -->
+  <div id="Home" class="tabcontent">
+  <h3>Anda saat ini sebagai user</h3>
+  <p>Silahkan tambahkan permintaan anda serta cek status permintaan anda</p>
+  <table class="table table-hover">
+    <thead class="table_utama text-white" style="background-color: #17a2b8;">
+      <tr>
+        <th>Permintaan Anda</th>
+        <th id="hilangkan">Waktu Permintaan</th>
+        <th id="hilangkan">Waktu Tindak Lanjut</th>
+        <th id="hilangkan">Estimasi Pengerjaan</th>
+        <th id="hilangkan">Penerima</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <!-- dummy tabel isi -->
+    <tbody class="anakTabel"> 
+          <tr>
+            <td>minta pembuatan task manager based website</td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">ICT</td> 
+            <td>
+                <a href="#" class="btn btn-success" onclick="tekanNih3()">Selesai</a>
+            </td>
+          </tr>
+          <tr>
+            <td>minta bersihkan laboratorium kebidanan di lantai 4, karena besok osce</td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Adul</td>
+            <td>
+                <a href="#" class="btn btn-warning" onclick="tekanNih3()">Diproses</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s, when an 
+              unknown printer took a galley of type and scrambled it to make a 
+              type specimen book.</td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-secondary" onclick="tekanNih3()">Antri</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s, when an 
+              </td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-danger" onclick="tekanNih3()">Segera</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's</td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-info" onclick="tekanNih3()">Ditunda</a>
+            </td>
+          </tr>
+    </tbody>
+  </table>
+<!-- BUTTON TAMBAHKAN PERMINTAAN -->
+  <button class="btn btn-outline-primary" type="button" onclick="tekanNih2()">Tambahkan</button>
+  </div>
+
+<!-- INI ADMIN -->
+<!-- tabel header -->
+  <div id="News" class="tabcontent">
+  <h3>Anda saat ini sebagai admin</h3>
+  <p>Silahkan tindak lanjuti permintaan kepada tim anda, ubah serta cek statusnya (silahkan isi estimasi jika perlu)</p>
+  <table class="table table-hover">
+    <thead class="table_utama text-white" style="background-color: #fd7e14;">
+      <tr>
+        <th>Permintaan Klien</th>
+        <th id="hilangkan">Waktu Permintaan</th>
+        <th id="hilangkan">Waktu Tindak Lanjut</th>
+        <th id="hilangkan">Estimasi Pengerjaan</th>
+        <th id="hilangkan">Penerima</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+<!-- dummy tabel isi -->
+    <tbody class="anakTabel"> 
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s, when an 
+              unknown printer took a galley of type and scrambled it to make a 
+              type specimen book.</td> 
+            <td id="hilangkan2">14-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+              <a href="#" class="btn btn-warning" onclick="tekanNih()">diproses</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry</td> 
+            <td id="hilangkan2">25-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-success" onclick="tekanNih()">Selesai</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s 
+              type specimen book.</td> 
+            <td id="hilangkan2">05-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-info" onclick="tekanNih()">Ditunda</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              </td> 
+            <td id="hilangkan2">25-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-danger" onclick="tekanNih()">Urgent</a>
+            </td>
+          </tr>
+          <tr>
+            <td>is simply dummy text</td> 
+            <td id="hilangkan2">09-02-2022</td> 
+            <td id="hilangkan2">07-02-2022</td> 
+            <td id="hilangkan2">2 hari</td> 
+            <td id="hilangkan2">Sumardi Sega</td> 
+            <td>
+                <a href="#" class="btn btn-secondary" onclick="tekanNih()">Antri</a>
+            </td>
+          </tr>
+    </tbody>
+  </table> 
+  </div>
+</div>
+
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button> -->
+
+
+<!-- <div class="card" style="width: 18rem;" id="isiyuk">
+  <div class="card-body">
+    <h5 class="card-title">Form Permintaan</h5>
+    <p class="card-text">Silahkan pilih dulu divisi yang dituju</p>
+    <select name="" id="">
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+      <option value="">divisi</option>
+    </select>
+    <br>
+    <br>
+    <label for="exampleInputEmail1">Tuliskan Permintaan Anda</label>
+    <textarea class="form-control" rows="5" id="comment" placeholder="tulis disini..."></textarea>
+    <br>
+    <a href="#" class="btn btn-primary">Kirim</a>
+  </div>
+</div> -->
+
+<script src="../frontend/librariy/jquery/jquery-3.6.0.min.js"></script>
+<script src="./librariy/js/bootstrap.js"></script>
+<script src="./script/main.js"></script>
+<script src="./library/retina js/retina.min.js"></script>
+</body>
+</html>
